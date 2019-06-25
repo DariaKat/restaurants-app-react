@@ -1,14 +1,80 @@
 import React from "react";
 import "./normalize.css";
-import "./index.css";
+
+import styled from "styled-components";
+
+const StyleHeader = styled.header`
+  .container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  ul,
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .content {
+    background-color: rgba(94, 94, 94, 0.973);
+  }
+
+  .btn {
+    font-family: "Sintony", sans-serif;
+    background-color: #fea100;
+    color: #fff;
+    line-height: 18px;
+    margin: 15px;
+    padding: 15px 28px 15px 28px;
+    font-weight: 600;
+    font-size: 14px;
+    float: right;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    position: relative;
+    height: fit-content;
+  }
+
+  .btn:hover {
+    border-color: #fff;
+  }
+
+  .menu li {
+    display: inline-block;
+  }
+
+  .container-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu a {
+    color: white;
+    padding: 30px 15px;
+    font-family: "Sintony", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .menu a:hover {
+    color: #fea100;
+  }
+`;
 
 function Header() {
   return (
-    <header className="header">
-      <div className="header_content">
+    <StyleHeader>
+      <div className="content">
         <div className="container">
-          <div className="header_container-inner">
-            <div className="header_logo">
+          <div className="container-inner">
+            <div className="logo">
               <a href="#">
                 <img src="/images/logo.png" />
               </a>
@@ -38,13 +104,13 @@ function Header() {
                 </li>
               </ul>
             </nav>
-            <button className="header_btn" href="#">
+            <button className="btn" href="#">
               BOOK YOURTABLE
             </button>
           </div>
         </div>
       </div>
-    </header>
+    </StyleHeader>
   );
 }
 

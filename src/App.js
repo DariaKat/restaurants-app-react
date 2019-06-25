@@ -1,6 +1,5 @@
 import React from "react";
 import "./normalize.css";
-import "./index.css";
 import Header from "./Header";
 import Slider from "./Slider";
 import Opening from "./Opening";

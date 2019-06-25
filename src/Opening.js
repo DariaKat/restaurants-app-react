@@ -1,6 +1,5 @@
 import React from "react";
 import "./normalize.css";
-import "./index.css";
 import styled from "styled-components";
 
 const StyleOpening = styled.section`
