@@ -17,6 +17,7 @@ const StyleLink = styled(Link)`
   position: relative;
   height: fit-content;
   margin: 15px;
+  text-decoration: none;
   padding: 15px 28px 15px 28px;
   :hover {
     border-color: #fff;

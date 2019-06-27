@@ -13,8 +13,8 @@ const StyleButton = styled.button`
   border: 1px solid transparent;
   border-radius: 5px;
   position: relative;
+  list-style: none;
   height: fit-content;
-
   :hover {
     border-color: #fff;
   }
