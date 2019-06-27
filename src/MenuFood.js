@@ -3,6 +3,7 @@ import "./normalize.css";
 import Button from "./comp/Button";
 import styled from "styled-components";
 import BtnLink from "./comp/Link";
+import Menu from "./comp/FoodMenu/Menu";
 
 const StyleMenuFood = styled.section`
   font-family: "Sintony", sans-serif;
@@ -22,50 +23,6 @@ const StyleMenuFood = styled.section`
     font-weight: bolder;
     text-align: center;
     color: rgba(36, 36, 36, 0.973);
-  }
-  a {
-    text-decoration: none;
-    display: inline-block;
-  }
-
-  ul,
-  li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .item {
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .item p {
-    padding: 0px 10px;
-    margin: 0;
-  }
-
-  .item ul {
-    padding: 0px 10px;
-    margin: 0px auto;
-    background-position: center;
-  }
-
-  .item li {
-    display: inline-block;
-  }
-
-  .item a {
-    color: rgba(36, 36, 36, 0.973);
-    padding: 10px 15px;
-    font-family: "Sintony", sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
-  }
-
-  .item a:hover {
-    color: #fea100;
   }
 
   .price {
@@ -134,135 +91,88 @@ const StyleMenuFood = styled.section`
 function MenuFood() {
   return (
     <StyleMenuFood>
-      <div className="inner">
-        <div className="title">Food Menu</div>
-        <nav className="item">
-          <ul>
-            <li>
-              <a href="#">
-                <img src="/images/all.png" />
-                <p>All</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="/images/break.png" />
-                <p>Breakfast</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="/images/lunch.png" />
-                <p>Lunch</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="/images/snaks.png" />
-                <p>Snaks</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="/images/Pizza.png" />
-                <p>Pizza</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="/images/soups.png" />
-                <p>Soups</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="/images/dinner.png" />
-                <p>Dinner</p>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div className="price">
-          <div className="price-left">
-            <div className="price-eat">
-              <div className="price-name">
-                <div className="price-title">Ultimate organic fruit salad</div>
-                <div className="price-text">
-                  survived not only five centuries but the leap
-                </div>
+      <div className="title">Food Menu</div>
+      <Menu />
+      <div className="price">
+        <div className="price-left">
+          <div className="price-eat">
+            <div className="price-name">
+              <div className="price-title">Ultimate organic fruit salad</div>
+              <div className="price-text">
+                survived not only five centuries but the leap
               </div>
-              <div className="price-dol">$50.00</div>
             </div>
-            <div className="price-eat">
-              <div className="price-name">
-                <div className="price-title">Plain pancakes</div>
-                <div className="price-text">
-                  Donec eget augue at diam euismod viverra
-                </div>
-              </div>
-              <div className="price-dol">$68.00</div>
-            </div>
-            <div className="price-eat">
-              <div className="price-name">
-                <div className="price-title">Toasted jam</div>
-                <div className="price-text">
-                  Phasellus a ex accumsan, sollicitudin
-                </div>
-              </div>
-              <div className="price-dol">$22.00</div>
-            </div>
-            <div className="price-eat">
-              <div className="price-name">
-                <div className="price-title">Toasted jam copy</div>
-                <div className="price-text">
-                  Phasellus a ex accumsan, sollicitudin copy
-                </div>
-              </div>
-              <div className="price-dol">$39.00</div>
-            </div>
+            <div className="price-dol">$50.00</div>
           </div>
-          <div className="price-right">
-            <div className="price-eat">
-              <div className="price-name">
-                <div className="price-title">Ultimate organic fruit salad</div>
-                <div className="price-text">
-                  survived not only five centuries but the leap
-                </div>
+          <div className="price-eat">
+            <div className="price-name">
+              <div className="price-title">Plain pancakes</div>
+              <div className="price-text">
+                Donec eget augue at diam euismod viverra
               </div>
-              <div className="price-dol">$50.00</div>
             </div>
-            <div className="price-eat">
-              <div className="price-name">
-                <div className="price-title">Plain pancakes</div>
-                <div className="price-text">
-                  Donec eget augue at diam euismod viverra
-                </div>
+            <div className="price-dol">$68.00</div>
+          </div>
+          <div className="price-eat">
+            <div className="price-name">
+              <div className="price-title">Toasted jam</div>
+              <div className="price-text">
+                Phasellus a ex accumsan, sollicitudin
               </div>
-              <div className="price-dol">$68.00</div>
             </div>
-            <div className="price-eat">
-              <div className="price-name">
-                <div className="price-title">Toasted jam</div>
-                <div className="price-text">
-                  Phasellus a ex accumsan, sollicitudin
-                </div>
+            <div className="price-dol">$22.00</div>
+          </div>
+          <div className="price-eat">
+            <div className="price-name">
+              <div className="price-title">Toasted jam copy</div>
+              <div className="price-text">
+                Phasellus a ex accumsan, sollicitudin copy
               </div>
-              <div className="price-dol">$22.00</div>
             </div>
-            <div className="price-eat">
-              <div className="price-name">
-                <div className="price-title">Toasted jam copy</div>
-                <div className="price-text">
-                  Phasellus a ex accumsan, sollicitudin copy
-                </div>
-              </div>
-              <div className="price-dol">$39.00</div>
-            </div>
+            <div className="price-dol">$39.00</div>
           </div>
         </div>
-        <div className="btn">
-          <BtnLink to="/menu">EXPLOR FOOD MENU</BtnLink>
+        <div className="price-right">
+          <div className="price-eat">
+            <div className="price-name">
+              <div className="price-title">Ultimate organic fruit salad</div>
+              <div className="price-text">
+                survived not only five centuries but the leap
+              </div>
+            </div>
+            <div className="price-dol">$50.00</div>
+          </div>
+          <div className="price-eat">
+            <div className="price-name">
+              <div className="price-title">Plain pancakes</div>
+              <div className="price-text">
+                Donec eget augue at diam euismod viverra
+              </div>
+            </div>
+            <div className="price-dol">$68.00</div>
+          </div>
+          <div className="price-eat">
+            <div className="price-name">
+              <div className="price-title">Toasted jam</div>
+              <div className="price-text">
+                Phasellus a ex accumsan, sollicitudin
+              </div>
+            </div>
+            <div className="price-dol">$22.00</div>
+          </div>
+          <div className="price-eat">
+            <div className="price-name">
+              <div className="price-title">Toasted jam copy</div>
+              <div className="price-text">
+                Phasellus a ex accumsan, sollicitudin copy
+              </div>
+            </div>
+            <div className="price-dol">$39.00</div>
+          </div>
         </div>
+      </div>
+      <div className="btn">
+        <BtnLink to="/menu">EXPLOR FOOD MENU</BtnLink>
       </div>
     </StyleMenuFood>
   );
