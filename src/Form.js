@@ -2,6 +2,7 @@ import React from "react";
 import "./normalize.css";
 import Button from "./comp/Button";
 import styled from "styled-components";
+import Box from "./comp/Form/Box";
 
 const StyleForm = styled.section`
   background-image: url("/images/2.jpg");
@@ -21,46 +22,7 @@ const StyleForm = styled.section`
     color: black;
   }
 
-  .box {
-    display: inline-block;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .box form {
-    width: 800px;
-  }
-
-  .box-left {
-    display: inline-block;
-    padding: 10px;
-    margin: 20px;
-    width: 300px;
-  }
-
-  .box-left input {
-    padding: 10px 100px 10px 10px;
-    margin: 5px 0px;
-  }
-
-  .box-div {
-    margin: 10px;
-    font-family: "Sintony", sans-serif;
-    font-size: 16px;
-  }
-
-  .box-right {
-    display: inline-block;
-    padding: 10px;
-    margin: 20px;
-    width: 300px;
-  }
-
-  .box-right input {
-    padding: 10px 100px 10px 10px;
-    margin: 5px 0px;
-  }
-
+  
   .form-btn {
     display: flex;
     justify-content: space-around;
@@ -94,35 +56,7 @@ function Form() {
   return (
     <StyleForm>
       <div className="title">Reserve your table</div>
-      <div className="box">
-        <form>
-          <div className="box-inner">
-            <div className="box-left">
-              <div className="box-div">
-                <input type="text" name="Name" placeholder="Name*" />
-              </div>
-              <div className="box-div">
-                <input type="text" name="Time" placeholder="Time*" />
-              </div>
-              <div className="box-div">
-                <input type="text" name="Guests" placeholder="Guests*" />
-              </div>
-            </div>
-
-            <div className="box-right">
-              <div className="box-div">
-                <input type="text" name="Email" placeholder="Email" />
-              </div>
-              <div className="box-div">
-                <input type="text" name="Date" placeholder="Date*" />
-              </div>
-              <div className="box-div">
-                <input type="text" name="Phone" placeholder="Phone*" />
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
+      <Box />
       <div className="form-btn">
         <Button size="large">MAKE RESERVATION</Button>
       </div>
