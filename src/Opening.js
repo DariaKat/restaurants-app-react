@@ -9,12 +9,8 @@ const StyleOpening = styled.section`
   background-position: center;
   background-size: cover;
   min-height: 100px;
-
-  .container {
-    max-width: 1230px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
+  margin: 0 auto;
+  padding: 0 15px;
 
   .inner {
     color: black;
@@ -58,19 +54,17 @@ const StyleOpening = styled.section`
 function Opening() {
   return (
     <StyleOpening>
-      <div className="container">
-        <div className="inner">
-          <div className="item">
-            <div className="hours">Opening hours</div>
-          </div>
-          <div className="item">
-            <div className="title">Manday to Friday</div>
-            <div className="text">10am-10pm</div>
-          </div>
-          <div className="item">
-            <div className="title">Saturday to Sunday</div>
-            <div className="text">09am-11pm</div>
-          </div>
+      <div className="inner">
+        <div className="item">
+          <div className="hours">Opening hours</div>
+        </div>
+        <div className="item">
+          <div className="title">Manday to Friday</div>
+          <div className="text">10am-10pm</div>
+        </div>
+        <div className="item">
+          <div className="title">Saturday to Sunday</div>
+          <div className="text">09am-11pm</div>
         </div>
       </div>
     </StyleOpening>

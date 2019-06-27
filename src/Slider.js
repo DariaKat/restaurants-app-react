@@ -10,22 +10,14 @@ const StyleSlider = styled.section`
   min-height: 500px;
   vertical-align: 40px;
 
-  .container {
-    max-width: 1230px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+  position: relative;
+
   a {
     text-decoration: none;
     display: inline-block;
-  }
-
-  .inner {
-    position: relative;
-  }
-
-  .item {
-    text-align: center;
   }
 
   .title {
