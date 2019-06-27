@@ -1,6 +1,6 @@
 import React from "react";
 import "./normalize.css";
-
+import Button from "./comp/Button";
 import styled from "styled-components";
 
 const StyleForm = styled.section`
@@ -54,7 +54,6 @@ const StyleForm = styled.section`
     padding: 10px;
     margin: 20px;
     width: 300px;
-    /*float: right;*/
   }
 
   .box-right input {
@@ -87,54 +86,45 @@ const StyleForm = styled.section`
     border: 2px solid #ebca93;
   }
 
-  .container {
-    max-width: 1230px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
+  margin: 0 auto;
+  padding: 0 15px;
 `;
 
 function Form() {
   return (
     <StyleForm>
-      <div className="container">
-        <div className="inner">
-          <div className="content">
-            <div className="title">Reserve your table</div>
-            <div className="box">
-              <form>
-                <div className="box-inner">
-                  <div className="box-left">
-                    <div className="box-div">
-                      <input type="text" name="Name" placeholder="Name*" />
-                    </div>
-                    <div className="box-div">
-                      <input type="text" name="Time" placeholder="Time*" />
-                    </div>
-                    <div className="box-div">
-                      <input type="text" name="Guests" placeholder="Guests*" />
-                    </div>
-                  </div>
-
-                  <div className="box-right">
-                    <div className="box-div">
-                      <input type="text" name="Email" placeholder="Email" />
-                    </div>
-                    <div className="box-div">
-                      <input type="text" name="Date" placeholder="Date*" />
-                    </div>
-                    <div className="box-div">
-                      <input type="text" name="Phone" placeholder="Phone*" />
-                    </div>
-                  </div>
-                </div>
-              </form>
+      <div className="title">Reserve your table</div>
+      <div className="box">
+        <form>
+          <div className="box-inner">
+            <div className="box-left">
+              <div className="box-div">
+                <input type="text" name="Name" placeholder="Name*" />
+              </div>
+              <div className="box-div">
+                <input type="text" name="Time" placeholder="Time*" />
+              </div>
+              <div className="box-div">
+                <input type="text" name="Guests" placeholder="Guests*" />
+              </div>
             </div>
-            <div className="form-btn">
-              <button>MAKE RESERVATION</button>
+
+            <div className="box-right">
+              <div className="box-div">
+                <input type="text" name="Email" placeholder="Email" />
+              </div>
+              <div className="box-div">
+                <input type="text" name="Date" placeholder="Date*" />
+              </div>
+              <div className="box-div">
+                <input type="text" name="Phone" placeholder="Phone*" />
+              </div>
             </div>
           </div>
-        </div>
+        </form>
+      </div>
+      <div className="form-btn">
+        <Button size="large">MAKE RESERVATION</Button>
       </div>
     </StyleForm>
   );

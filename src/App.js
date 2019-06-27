@@ -1,22 +1,16 @@
 import React from "react";
 import "./normalize.css";
-import Header from "./Header";
-import Slider from "./Slider";
-import Opening from "./Opening";
-import MenuFood from "./MenuFood";
-import Form from "./Form";
-import Footer from "./Footer";
+import Home from "./pages/Home";
+
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Menu from "./pages/Menu";
 
 function App() {
   return (
-    <React.Fragment>
-      <Header />
-      <Slider />
-      <Opening />
-      <MenuFood />
-      <Form />
-      <Footer />
-    </React.Fragment>
+    <Router>
+      <Route path="/" exact component={Home} />
+      <Route path="/menu" exact component={Menu} />
+    </Router>
   );
 }
 
