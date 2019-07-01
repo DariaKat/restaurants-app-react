@@ -200,6 +200,14 @@ export default function getMenuItems(type) {
         return Promise.resolve(breakfast);
       case "lunch":
         return Promise.resolve(lunch);
+      case "snaks":
+        return Promise.resolve(snaks);
+      case "pizza":
+        return Promise.resolve(pizza);
+      case "soups":
+        return Promise.resolve(soups);
+      case "dinner":
+        return Promise.resolve(dinner);
       default:
         return new Error("Укажите тип");
     }
