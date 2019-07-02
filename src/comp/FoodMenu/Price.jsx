@@ -17,9 +17,9 @@ class Price extends React.Component {
   };
 
   componentDidMount() {
-    // getMenuItems("lunch")
-    //   .then(data => console.log(data))
-    //   .catch(e => console.log(e));
+    getMenuItems("breakfast")
+      .then(data => this.setState({ menu: data }))
+      .catch(e => console.log(e));
   }
 
   render() {

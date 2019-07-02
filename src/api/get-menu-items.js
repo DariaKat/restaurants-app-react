@@ -194,22 +194,31 @@ export default function getMenuItems(type) {
     }
   ];
 
-  setTimeout(() => {
-    switch (type) {
-      case "breakfast":
-        return Promise.resolve(breakfast);
-      case "lunch":
-        return Promise.resolve(lunch);
-      case "snaks":
-        return Promise.resolve(snaks);
-      case "pizza":
-        return Promise.resolve(pizza);
-      case "soups":
-        return Promise.resolve(soups);
-      case "dinner":
-        return Promise.resolve(dinner);
-      default:
-        return new Error("Укажите тип");
-    }
-  }, 500);
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      switch (type) {
+        case "breakfast":
+          resolve(breakfast);
+          break;
+        case "lunch":
+          resolve(lunch);
+          break;
+        case "snaks":
+          resolve(snaks);
+          break;
+        case "pizza":
+          resolve(pizza);
+          break;
+        case "soups":
+          resolve(soups);
+          break;
+        case "dinner":
+          resolve(dinner);
+          break;
+        default:
+          reject(new Error("Укажите тип"));
+          break;
+      }
+    }, 1000);
+  });
 }

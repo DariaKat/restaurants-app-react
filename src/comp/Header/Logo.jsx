@@ -8,10 +8,8 @@ const StyleLogo = styled.a`
 
 function Logo() {
   return (
-    <StyleLogo>
-      <a href="#">
-        <img src="/images/logo.png" />
-      </a>
+    <StyleLogo href="#">
+      <img src="/images/logo.png" />
     </StyleLogo>
   );
 }
