@@ -1,19 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
+import getMenuItems from "../../api/get-menu-items";
 
 const StylePriceEat = styled.div`
-    width: 500px;
+  width: 500px;
 
-  .name {
-    display: inline-block;
-  }
-
-  .title {
+  span {
     font-size: 18px;
     font-weight: bolder;
   }
 
-  .text {
+  p {
     font-size: 14px;
     line-height: 20px;
     padding: 0px 10px;
@@ -21,30 +19,35 @@ const StylePriceEat = styled.div`
     color: rgba(56, 56, 56, 0.973);
   }
 
-  .dol {
-    float: right;
+  span + span {
+    margin-left: 10px;
     font-size: 18px;
     font-weight: bolder;
-    padding-top:25px;
+    padding-top: 25px;
     color: #fea100;
   }
 `;
 
-function PriceEat () {
+PriceEat.propTypes = {
+  title: PropTypes.string.isRequired,
+  ingridients: PropTypes.string,
+  price: PropTypes.number,
+  cash: PropTypes.string.isRequired
+};
+
+PriceEat.defaultProps = {
+  ingridients: "Sorrian, brat, ne robit nash programmist",
+  price: "money net, but dergites"
+};
+
+function PriceEat({ title, ingridients, price, cash }) {
   return (
     <StylePriceEat>
-      <div className='name'>
-        <div className='title'>
-          Ultimate organic fruit salad
-        </div>
-        <div className='text'>
-          survived not only five centuries but the leap
-        </div>
-      </div>
-      <div className='dol'>
-        $50.00
-      </div>
-      </StylePriceEat>
-    )
+      <span>{title}</span>
+      <span>{`${cash}${price}`}</span>
+      <p>{ingridients}</p>
+    </StylePriceEat>
+  );
 }
+
 export default PriceEat;

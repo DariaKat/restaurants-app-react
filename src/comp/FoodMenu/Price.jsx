@@ -4,11 +4,9 @@ import PriceEat from "./PriceEat";
 import getMenuItems from "../../api/get-menu-items";
 
 const StylePrice = styled.div`
-  .price {
-    display: inline-block;
-    display: flex;
-    justify-content: space-around;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 `;
 
 class Price extends React.Component {
@@ -17,28 +15,27 @@ class Price extends React.Component {
   };
 
   componentDidMount() {
-    getMenuItems("breakfast")
+    getMenuItems("lunch")
       .then(data => this.setState({ menu: data }))
       .catch(e => console.log(e));
   }
 
   render() {
+    const { menu } = this.state;
+
+    /*console.log(this.props.food || "Все еще не работает");*/
+
     return (
       <StylePrice>
-        <div className="price">
-          <div className="price-left">
-            <PriceEat />
-            <PriceEat />
-            <PriceEat />
-            <PriceEat />
-          </div>
-          <div className="price-right">
-            <PriceEat />
-            <PriceEat />
-            <PriceEat />
-            <PriceEat />
-          </div>
-        </div>
+        {menu.map(({ id, name, ingridients, price, cash }) => (
+          <PriceEat
+            key={id}
+            title={name}
+            ingridients={ingridients}
+            price={price}
+            cash={cash}
+          />
+        ))}
       </StylePrice>
     );
   }
