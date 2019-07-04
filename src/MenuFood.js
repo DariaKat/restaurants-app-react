@@ -25,13 +25,11 @@ const StyleMenuFood = styled.section`
     text-align: center;
     color: rgba(36, 36, 36, 0.973);
   }
-  
 
   .btn {
     display: flex;
     justify-content: space-around;
   }
-
 `;
 
 function MenuFood() {
