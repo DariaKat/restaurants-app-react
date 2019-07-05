@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Price from "./Price";
 import Icon from "./Icon";
 
 const StyleMenu = styled.ul`

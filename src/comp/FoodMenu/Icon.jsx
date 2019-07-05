@@ -1,6 +1,9 @@
 import React from "react";
-import styled from "styled-components";
 import PropTypes from "prop-types";
+
+Icon.propTypes = {
+  name: PropTypes.string.isRequired
+};
 
 export default function Icon({ name }) {
   return (
