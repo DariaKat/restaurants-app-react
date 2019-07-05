@@ -1,14 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import {
-  IconAll,
-  IconBreak,
-  IconLunch,
-  IconSnack,
-  IconPizza,
-  IconSoups,
-  IconDinner
-} from "./Icon";
+import Price from "./Price";
+import Icon from "./Icon";
 
 const StyleMenu = styled.ul`
   height: 70px;
@@ -44,16 +37,19 @@ const StyleMenu = styled.ul`
 `;
 
 class Menu extends React.Component {
+  state = {
+    food: []
+  };
+
   render() {
     return (
       <StyleMenu>
-        <IconAll />
-        <IconBreak />
-        <IconLunch />
-        <IconSnack />
-        <IconPizza />
-        <IconSoups />
-        <IconDinner />
+        <Icon name="breakfast" />
+        <Icon name="lunch" />
+        <Icon name="soups" />
+        <Icon name="pizza" />
+        <Icon name="snaks" />
+        <Icon name="dinner" />
       </StyleMenu>
     );
   }

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PriceEat from "./PriceEat";
+import Menu from "./Menu";
 import getMenuItems from "../../api/get-menu-items";
 
 const StylePrice = styled.div`
@@ -22,9 +23,7 @@ class Price extends React.Component {
 
   render() {
     const { menu } = this.state;
-
-    /*console.log(this.props.food || "Все еще не работает");*/
-
+    console.log(this.props.food || "Все еще не работает");
     return (
       <StylePrice>
         {menu.map(({ id, name, ingridients, price, cash }) => (

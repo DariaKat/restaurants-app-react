@@ -1,9 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-
-import getMenuItems from "../../api/get-menu-items";
-
 const StylePriceEat = styled.div`
   width: 500px;
 
