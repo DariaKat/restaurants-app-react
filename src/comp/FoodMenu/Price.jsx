@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PriceEat from "./PriceEat";
+import Icon from "./Icon";
 import getMenuItems from "../../api/get-menu-items";
 
 const StylePrice = styled.div`

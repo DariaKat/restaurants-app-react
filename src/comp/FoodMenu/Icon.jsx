@@ -1,19 +1,22 @@
 import React from "react";
+import Price from "./Price";
 import PropTypes from "prop-types";
 
-Icon.propTypes = {
-  name: PropTypes.string.isRequired
-};
+class Icon extends React.Component {
+  state = {
+    food: []
+  };
 
-export default function Icon({ name }) {
-  return (
-    <button
-      onClick={food => {
-        console.log(name);
-      }}
-    >
-      <img src={`/images/${name}.png`} alt={name} />
-      <p>{name}</p>
-    </button>
-  );
+  render() {
+    return (
+      <button
+        onClick={food => this.setState(console.log({ food: this.props.name }))}
+      >
+        <img src={`/images/${this.props.name}.png`} alt={this.props.name} />
+        <p>{this.props.name}</p>
+      </button>
+    );
+  }
 }
+
+export default Icon;
