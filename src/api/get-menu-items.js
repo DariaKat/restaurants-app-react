@@ -219,6 +219,6 @@ export default function getMenuItems(type) {
           reject(new Error("Укажите тип"));
           break;
       }
-    }, 1000);
+    }, 800);
   });
 }

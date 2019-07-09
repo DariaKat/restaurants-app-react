@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Icon from "./Icon";
+import PropTypes from "prop-types";
 
 const StyleMenu = styled.ul`
   height: 70px;
@@ -15,24 +16,6 @@ const StyleMenu = styled.ul`
     padding: 0px 10px;
     margin: 0;
   }
-
-  button {
-    color: rgba(36, 36, 36, 0.973);
-    padding: 10px 15px;
-    font-family: "Sintony", sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
-    background-color: Transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-  }
-
-  button:hover {
-    color: #fea100;
-  }
 `;
 
 class Menu extends React.Component {
@@ -40,15 +23,44 @@ class Menu extends React.Component {
     food: []
   };
 
+  static propTypes = {
+    item: PropTypes.string.isRequired,
+    onItemChange: PropTypes.func.isRequired
+  };
+
   render() {
     return (
       <StyleMenu>
-        <Icon name="breakfast" />
-        <Icon name="lunch" />
-        <Icon name="soups" />
-        <Icon name="pizza" />
-        <Icon name="snaks" />
-        <Icon name="dinner" />
+        <Icon
+          isActive={this.props.item === "breakfast"}
+          name="breakfast"
+          onNameChange={name => this.props.onItemChange(name)}
+        />
+        <Icon
+          isActive={this.props.item === "lunch"}
+          name="lunch"
+          onNameChange={name => this.props.onItemChange(name)}
+        />
+        <Icon
+          isActive={this.props.item === "soups"}
+          name="soups"
+          onNameChange={name => this.props.onItemChange(name)}
+        />
+        <Icon
+          isActive={this.props.item === "pizza"}
+          name="pizza"
+          onNameChange={name => this.props.onItemChange(name)}
+        />
+        <Icon
+          isActive={this.props.item === "snaks"}
+          name="snaks"
+          onNameChange={name => this.props.onItemChange(name)}
+        />
+        <Icon
+          isActive={this.props.item === "dinner"}
+          name="dinner"
+          onNameChange={name => this.props.onItemChange(name)}
+        />
       </StyleMenu>
     );
   }

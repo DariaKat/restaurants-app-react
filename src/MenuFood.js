@@ -32,17 +32,26 @@ const StyleMenuFood = styled.section`
   }
 `;
 
-function MenuFood() {
-  return (
-    <StyleMenuFood>
-      <div className="title">Food Menu</div>
-      <Menu />
-      <Price />
-      <div className="btn">
-        <BtnLink to="/menu">EXPLOR FOOD MENU</BtnLink>
-      </div>
-    </StyleMenuFood>
-  );
+class MenuFood extends React.Component {
+  state = {
+    item: "lunch"
+  };
+
+  render() {
+    return (
+      <StyleMenuFood>
+        <div className="title">Food Menu</div>
+        <Menu
+          item={this.state.item}
+          onItemChange={item => this.setState({ item: item })}
+        />
+        <Price item={this.state.item} />
+        <div className="btn">
+          <BtnLink to="/menu">EXPLOR FOOD MENU</BtnLink>
+        </div>
+      </StyleMenuFood>
+    );
+  }
 }
 
 export default MenuFood;
