@@ -17,7 +17,7 @@ const StyleButton = styled.button`
   overflow: hidden;
 
   :hover {
-    color: ${props => (props.size === "small" ? "#fea100" : "")};
+    color: #fea100;
   }
 `;
 
