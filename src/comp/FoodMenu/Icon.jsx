@@ -15,9 +15,12 @@ const StyleButton = styled.button`
   border: none;
   cursor: pointer;
   overflow: hidden;
+  outline: none;
+  color: ${props => (props.isActive ? "#fea100" : "black")};
 
-  :hover {
-    color: #fea100;
+  p {
+    padding: 0px 10px;
+    margin: 0;
   }
 `;
 
@@ -33,25 +36,16 @@ class Icon extends React.Component {
   };
 
   render() {
-    const foo = this.props.isActive ? "(Выбрано)" : "";
-
     return (
-      <StyleButton onClick={event => this.props.onNameChange(this.props.name)}>
+      <StyleButton
+        isActive={this.props.isActive}
+        onClick={event => this.props.onNameChange(this.props.name)}
+      >
         <img src={`/images/${this.props.name}.png`} alt={this.props.name} />
-        <p>{this.props.name + foo}</p>
+        <p>{this.props.name}</p>
       </StyleButton>
     );
   }
 }
 
-const StyledIcon = styled(Icon)`
-  button {
-    color: ${props => (props.isActive ? "red" : "")};
-
-    :hover {
-      color: #fea100;
-    }
-  }
-`;
-
-export default StyledIcon;
+export default Icon;

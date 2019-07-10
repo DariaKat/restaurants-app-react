@@ -11,11 +11,6 @@ const StyleMenu = styled.ul`
   margin: 0px auto;
   background-position: center;
   margin: 20px 0px;
-
-  p {
-    padding: 0px 10px;
-    margin: 0;
-  }
 `;
 
 class Menu extends React.Component {

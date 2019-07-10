@@ -12,6 +12,7 @@ function App() {
       <Route path="/" exact component={Home} />
       <Route path="/menu" exact component={Menu} />
       <Route path="/book" exact component={Book} />
+      <Route path="/home" exact component={Menu} />
     </Router>
   );
 }

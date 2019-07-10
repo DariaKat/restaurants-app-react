@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import LinksNavig from "./LinksNavig";
 
 const StyleNavigation = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
 
-  .content-navig {
+  div {
     font-size: 18px;
     line-height: 28px;
     padding: 30px 5px 10px 0px;
@@ -36,30 +37,28 @@ const StyleNavigation = styled.ul`
 function Navigation() {
   return (
     <StyleNavigation>
-      <ul>
-        <div className="content-navig">Navigation</div>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">About us</a>
-        </li>
-        <li>
-          <a href="#">Menu</a>
-        </li>
-        <li>
-          <a href="#">Reservation</a>
-        </li>
-        <li>
-          <a href="#">Recipe</a>
-        </li>
-        <li>
-          <a href="#">Blog</a>
-        </li>
-        <li>
-          <a href="#">Contact us</a>
-        </li>
-      </ul>
+      <div>Navigation</div>
+      <li>
+        <LinksNavig to="/home">Home</LinksNavig>
+      </li>
+      <li>
+        <LinksNavig to="/home">About us</LinksNavig>
+      </li>
+      <li>
+        <LinksNavig to="/menu">Menu</LinksNavig>
+      </li>
+      <li>
+        <LinksNavig to="/home">Reservation</LinksNavig>
+      </li>
+      <li>
+        <LinksNavig to="/home">Recipe</LinksNavig>
+      </li>
+      <li>
+        <LinksNavig to="/home">Blog</LinksNavig>
+      </li>
+      <li>
+        <LinksNavig to="/home">Contact us</LinksNavig>
+      </li>
     </StyleNavigation>
   );
 }

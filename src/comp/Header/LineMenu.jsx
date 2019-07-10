@@ -1,17 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import LinksPage from "./LinksPage";
 
 const StyleLineMenu = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
-
-  li {
-    display: inline-block;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
 
   a {
     color: white;
@@ -31,29 +25,12 @@ const StyleLineMenu = styled.ul`
 function LineMenu() {
   return (
     <StyleLineMenu>
-      <ul>
-        <li>
-          <a href="#">HOME</a>
-        </li>
-        <li>
-          <a href="#">MENU</a>
-        </li>
-        <li>
-          <a href="#">RESERVATION</a>
-        </li>
-        <li>
-          <a href="#">RECIPE</a>
-        </li>
-        <li>
-          <a href="#">BLOG</a>
-        </li>
-        <li>
-          <a href="#">PAGES</a>
-        </li>
-        <li>
-          <a href="#">CONTACT</a>
-        </li>
-      </ul>
+      <LinksPage to="/home">HOME</LinksPage>
+      <LinksPage to="/menu">MENU</LinksPage>
+      <LinksPage to="/menu">RESERVATION</LinksPage>
+      <LinksPage to="/menu">RECIPE</LinksPage>
+      <LinksPage to="/menu">BLOG</LinksPage>
+      <LinksPage to="/menu">PAGES</LinksPage>
     </StyleLineMenu>
   );
 }
