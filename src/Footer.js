@@ -26,8 +26,8 @@ const StyleFooter = styled.footer`
     justify-content: space-between;
   }
 
-  .navigation {
-    max-width: 700px;
+  .content-all: nth-last-child {
+    max-width: 900px;
     padding: 0px 20px;
     margin: 20px 60px;
   }
@@ -37,10 +37,10 @@ function Footer() {
   return (
     <StyleFooter>
       <div className="content-all">
-        <div className="navigation">
+        <div>
           <Navigation />
         </div>
-        <div className="navigation">
+        <div>
           <News />
           <Social />
         </div>

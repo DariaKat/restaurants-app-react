@@ -6,9 +6,8 @@ const StyleSocial = styled.div`
     text-decoration: none;
     display: inline-block;
   }
-  .news-social {
-    margin-top: 20px;
-  }
+
+  margin-top: 20px;
 
   a.facebook {
     background-image: url("../images/facebook.png");
@@ -32,11 +31,9 @@ const StyleSocial = styled.div`
 function Social() {
   return (
     <StyleSocial>
-      <div className="news-social">
-        <a href="#" className="facebook" />
-        <a href="#" className="twitter" />
-        <a href="#" className="googleplus" />
-      </div>
+      <a href="#" className="facebook" />
+      <a href="#" className="twitter" />
+      <a href="#" className="googleplus" />
     </StyleSocial>
   );
 }

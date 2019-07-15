@@ -5,7 +5,7 @@ import LinksNavig from "./LinksNavig";
 const StyleNavigation = styled.ul`
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 20px;
 
   div {
     font-size: 18px;

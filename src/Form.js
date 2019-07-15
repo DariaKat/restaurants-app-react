@@ -9,7 +9,7 @@ const StyleForm = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 400px;
+  min-height: 300px;
   vertical-align: 40px;
 
   .title {
@@ -22,7 +22,6 @@ const StyleForm = styled.section`
     color: black;
   }
 
-  
   .form-btn {
     display: flex;
     justify-content: space-around;

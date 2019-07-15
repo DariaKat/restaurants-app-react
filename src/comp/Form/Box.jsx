@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import UrlInput from "../UrlInput";
 
 const StyleBox = styled.form`
   display: inline-block;
@@ -9,64 +10,31 @@ const StyleBox = styled.form`
   margin: 0 auto;
   width: 800px;
 
-  .left {
+  div {
     display: inline-block;
-    padding: 10px;
-    margin: 20px;
+    padding: 5px;
+
     width: 300px;
-  }
-
-  .left input {
-    padding: 10px 100px 10px 10px;
-    margin: 5px 0px;
-  }
-
-  .div {
-    margin: 10px;
-    font-family: "Sintony", sans-serif;
-    font-size: 16px;
-  }
-
-  .right {
-    display: inline-block;
-    padding: 10px;
-    margin: 20px;
-    width: 300px;
-  }
-
-  .right input {
-    padding: 10px 100px 10px 10px;
-    margin: 5px 0px;
   }
 `;
 
 function Box() {
   return (
     <StyleBox>
-      <div className="inner">
-        <div className="left">
-          <div className="div">
-            <input type="text" name="Name" placeholder="Name*" />
-          </div>
-          <div className="div">
-            <input type="text" name="Time" placeholder="Time*" />
-          </div>
-          <div className="div">
-            <input type="text" name="Guests" placeholder="Guests*" />
-          </div>
-        </div>
+      <div>
+        <UrlInput name="Name*" size="large" />
 
-        <div className="right">
-          <div className="div">
-            <input type="text" name="Email" placeholder="Email" />
-          </div>
-          <div className="div">
-            <input type="text" name="Date" placeholder="Date*" />
-          </div>
-          <div className="div">
-            <input type="text" name="Phone" placeholder="Phone*" />
-          </div>
-        </div>
+        <UrlInput name="Time*" />
+
+        <UrlInput name="Guests*" />
+      </div>
+
+      <div>
+        <UrlInput name="Email*" />
+
+        <UrlInput name="Date*" />
+
+        <UrlInput name="Phone*" />
       </div>
     </StyleBox>
   );
