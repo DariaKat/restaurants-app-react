@@ -10,7 +10,7 @@ const StyleNews = styled.div`
   font-weight: 100;
   color: rgb(194, 194, 194);
 
-  div: nth-last-child(2) {
+  div:nth-last-child(2) {
     font-size: 18px;
     line-height: 28px;
     padding: 30px 5px 10px 0px;
@@ -33,4 +33,5 @@ function News() {
     </StyleNews>
   );
 }
+
 export default News;

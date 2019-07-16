@@ -10,7 +10,7 @@ const StyleNavigation = styled.ul`
   div {
     font-size: 18px;
     line-height: 28px;
-    padding: 30px 5px 10px 0px;
+    padding: 40px 5px 10px 0px;
     font-weight: 600;
     color: white;
   }
@@ -34,6 +34,7 @@ const StyleNavigation = styled.ul`
     color: #fea100;
   }
 `;
+
 function Navigation() {
   return (
     <StyleNavigation>

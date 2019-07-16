@@ -7,7 +7,7 @@ const StyleContent = styled.div`
     display: inline-block;
   }
 
-  .title {
+  div {
     font-family: "Sintony", sans-serif;
     font-size: 32px;
     color: rgb(151, 3, 3);
@@ -17,16 +17,16 @@ const StyleContent = styled.div`
     height: 30px;
   }
 
-  .title p {
+  div > p {
     font-family: "Sintony", sans-serif;
     margin-top: 15px;
     margin-bottom: 20px;
   }
-  .title-p {
+  p: last-of-type {
     font-size: 42px;
   }
 
-  .text {
+  div: nth-last-child(2) {
     padding-top: 210px;
     font-size: 18px;
     font-weight: 700;
@@ -35,7 +35,7 @@ const StyleContent = styled.div`
     margin-bottom: 10px;
   }
 
-  .phone {
+  a {
     color: #fff;
     font-family: "Sintony", sans-serif;
     font-size: 24px;
@@ -48,14 +48,12 @@ const StyleContent = styled.div`
 function Content() {
   return (
     <StyleContent>
-      <div className="title">
-        <p className="title-p">Taste your fav dish </p>
+      <div>
+        <p className>Taste your fav dish </p>
         <p>from luxury restaurant.</p>
       </div>
-      <div className="text">Call us and book your table</div>
-      <a href="tel:1008005006" className="phone">
-        1-008 005 006
-      </a>
+      <div>Call us and book your table</div>
+      <a href="tel:1008005006">1-008 005 006</a>
     </StyleContent>
   );
 }

@@ -12,7 +12,7 @@ const StyleForm = styled.section`
   min-height: 300px;
   vertical-align: 40px;
 
-  .title {
+  div {
     font-size: 32px;
     line-height: 28px;
     padding: 20px 10px 5px;
@@ -27,26 +27,6 @@ const StyleForm = styled.section`
     justify-content: space-around;
   }
 
-  .form-btn button {
-    font-family: "Sintony", sans-serif;
-    background-color: #fea100;
-    color: #fff;
-    line-height: 18px;
-    margin: 15px;
-    padding: 15px 28px 15px 28px;
-    font-weight: 600;
-    font-size: 14px;
-    float: right;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    position: relative;
-    height: fit-content;
-  }
-
-  .form-btn button:hover {
-    border: 2px solid #ebca93;
-  }
-
   margin: 0 auto;
   padding: 0 15px;
 `;
@@ -54,7 +34,7 @@ const StyleForm = styled.section`
 function Form() {
   return (
     <StyleForm>
-      <div className="title">Reserve your table</div>
+      <div>Reserve your table</div>
       <Box />
       <div className="form-btn">
         <Button size="large">MAKE RESERVATION</Button>

@@ -24,17 +24,17 @@ function Box() {
       <div>
         <UrlInput name="Name*" size="large" />
 
-        <UrlInput name="Time*" />
+        <UrlInput name="Time*" size="large" />
 
-        <UrlInput name="Guests*" />
+        <UrlInput name="Guests*" size="large" />
       </div>
 
       <div>
-        <UrlInput name="Email*" />
+        <UrlInput name="Email*" size="large" />
 
-        <UrlInput name="Date*" />
+        <UrlInput name="Date*" size="large" />
 
-        <UrlInput name="Phone*" />
+        <UrlInput name="Phone*" size="large" />
       </div>
     </StyleBox>
   );

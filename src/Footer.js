@@ -26,7 +26,7 @@ const StyleFooter = styled.footer`
     justify-content: space-between;
   }
 
-  .content-all: nth-last-child {
+  .content-all:nth-last-child {
     max-width: 900px;
     padding: 0px 20px;
     margin: 20px 60px;
