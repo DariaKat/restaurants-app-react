@@ -2,12 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const StyleApp = styled.div`
-  padding: 20px 40px 10px 0px;
-
   div {
     font-size: 18px;
     line-height: 28px;
-    padding: 20px 5px 0px 0px;
+    padding: 30px 5px 0px 0px;
     font-weight: 600;
     color: white;
   }

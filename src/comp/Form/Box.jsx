@@ -22,19 +22,19 @@ function Box() {
   return (
     <StyleBox>
       <div>
-        <UrlInput name="Name*" size="large" />
+        <UrlInput name="Name*" size="large" type="text" />
 
-        <UrlInput name="Time*" size="large" />
+        <UrlInput name="Time*" size="large" type="text" />
 
-        <UrlInput name="Guests*" size="large" />
+        <UrlInput name="Guests*" size="large" type="text" />
       </div>
 
       <div>
-        <UrlInput name="Email*" size="large" />
+        <UrlInput name="Email*" size="large" type="text" />
 
-        <UrlInput name="Date*" size="large" />
+        <UrlInput name="Date*" size="large" type="data" />
 
-        <UrlInput name="Phone*" size="large" />
+        <UrlInput name="Phone*" size="large" type="text" />
       </div>
     </StyleBox>
   );

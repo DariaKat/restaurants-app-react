@@ -10,7 +10,7 @@ const StyleNavigation = styled.ul`
   div {
     font-size: 18px;
     line-height: 28px;
-    padding: 40px 5px 10px 0px;
+    padding: 25px 5px 10px 0px;
     font-weight: 600;
     color: white;
   }

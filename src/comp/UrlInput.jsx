@@ -19,9 +19,9 @@ class UrlInput extends React.Component {
   render() {
     return (
       <StyleUrlInput
-        defaultValue={this.props.name}
+        placeholder={this.props.name}
         size={this.props.size}
-        type="text"
+        type={this.props.type}
       />
     );
   }
