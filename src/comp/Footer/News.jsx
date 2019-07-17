@@ -26,7 +26,7 @@ function News() {
         <div>News letter</div>
         <div>
           <div>Enter your email address and subscribe daily newsletter</div>
-          <UrlInput name="Email Address" size="small" type="text" />
+          <UrlInput name="Email Address" size="small" type="email" />
           <Button size="small">SUBSCRIBE</Button>
         </div>
       </div>

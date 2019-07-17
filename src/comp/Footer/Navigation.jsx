@@ -43,22 +43,19 @@ function Navigation() {
         <LinksNavig to="/home">Home</LinksNavig>
       </li>
       <li>
-        <LinksNavig to="/home">About us</LinksNavig>
-      </li>
-      <li>
         <LinksNavig to="/menu">Menu</LinksNavig>
       </li>
       <li>
-        <LinksNavig to="/home">Reservation</LinksNavig>
+        <LinksNavig to="/reservation">Reservation</LinksNavig>
       </li>
       <li>
-        <LinksNavig to="/home">Recipe</LinksNavig>
+        <LinksNavig to="/recipe">Recipe</LinksNavig>
       </li>
       <li>
-        <LinksNavig to="/home">Blog</LinksNavig>
+        <LinksNavig to="/blog">Blog</LinksNavig>
       </li>
       <li>
-        <LinksNavig to="/home">Contact us</LinksNavig>
+        <LinksNavig to="/contactus">Contact us</LinksNavig>
       </li>
     </StyleNavigation>
   );

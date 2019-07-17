@@ -27,10 +27,10 @@ function LineMenu() {
     <StyleLineMenu>
       <LinksPage to="/home">HOME</LinksPage>
       <LinksPage to="/menu">MENU</LinksPage>
-      <LinksPage to="/menu">RESERVATION</LinksPage>
-      <LinksPage to="/menu">RECIPE</LinksPage>
-      <LinksPage to="/menu">BLOG</LinksPage>
-      <LinksPage to="/menu">PAGES</LinksPage>
+      <LinksPage to="/reservation">RESERVATION</LinksPage>
+      <LinksPage to="/recipe">RECIPE</LinksPage>
+      <LinksPage to="/blog">BLOG</LinksPage>
+      <LinksPage to="/pages">PAGES</LinksPage>
     </StyleLineMenu>
   );
 }
