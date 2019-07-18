@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const StyleContent = styled.div`
+  position: absolute;
+
   a {
     text-decoration: none;
     display: inline-block;
@@ -22,11 +24,11 @@ const StyleContent = styled.div`
     margin-top: 15px;
     margin-bottom: 20px;
   }
-  p: last-of-type {
+  p:last-of-type {
     font-size: 42px;
   }
 
-  div: nth-last-child(2) {
+  div:nth-last-child(2) {
     padding-top: 210px;
     font-size: 18px;
     font-weight: 700;
@@ -49,7 +51,7 @@ function Content() {
   return (
     <StyleContent>
       <div>
-        <p className>Taste your fav dish </p>
+        <p>Taste your fav dish </p>
         <p>from luxury restaurant.</p>
       </div>
       <div>Call us and book your table</div>
