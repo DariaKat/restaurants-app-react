@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const StyleContent = styled.div`
   position: absolute;
+  margin: 50px 700px;
 
   a {
     text-decoration: none;
@@ -14,7 +15,7 @@ const StyleContent = styled.div`
     font-size: 32px;
     color: rgb(151, 3, 3);
     font-weight: 700;
-    padding-top: 170px;
+
     text-shadow: white 0 0 2px;
     height: 30px;
   }

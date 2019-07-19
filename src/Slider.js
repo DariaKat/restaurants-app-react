@@ -6,14 +6,9 @@ import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 
 const StyleSlider = styled.section`
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 100px;
   vertical-align: 40px;
   margin: 0 auto;
   text-align: center;
-  position: relative;
 `;
 
 const content = [
